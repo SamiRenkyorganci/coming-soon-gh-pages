@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 500px; /* Logo boyutunu büyüttük */
+    height: auto;
+    margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.message h1 {
+    font-size: 11rem; /* Yazı boyutunu daha da büyüttük */
+    color: #000;
+    line-height: 1.2;
+}
+
+.message span {
+    color: #3DAE2B;
+    float: left;
+}
+
+.email p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+    .message h1 {
+        font-size: 5rem;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 480px) {
+    .message h1 {
+        font-size: 3.5rem;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .email p {
+        font-size: 1rem;
+    }
+}
